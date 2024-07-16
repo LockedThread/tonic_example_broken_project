@@ -1,0 +1,17 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/rust
+{
+	"name": "Rust",
+	"image": "mcr.microsoft.com/devcontainers/rust:1-1-bullseye",
+	"postCreateCommand": "sudo chmod +x .devcontainer/setup.sh && .devcontainer/setup.sh",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"1YiB.rust-bundle"
+			],
+			"settings": {
+				"rust-analyzer.cargo.buildScripts.enable": true
+			}
+		}
+	}
+}
