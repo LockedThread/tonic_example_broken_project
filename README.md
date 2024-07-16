@@ -2,6 +2,12 @@
 
 This project demonstrates a bug [tonic_build](https://github.com/hyperium/tonic/tree/master/tonic-build). tonic_build is unable to handle protos with services named Sync or Send due to naming collisions with [std::marker](https://doc.rust-lang.org/std/marker/index.html).
 
+## Layout
+
+- The broken folder contains an example project using the latest version of tonic.
+- The fixed folder contains the same example project, however it is pointing to [my fork of tonic](https://github.com/LockedThread/tonic/tree/fix/std-naming-collision).
+
+
 ## Complication Output
 ```
 vscode ➜ /workspaces/tonic_example_broken_project (main) $ cargo build
